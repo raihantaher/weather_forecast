@@ -1,0 +1,38 @@
+<!Doctype html>
+<html lang="en-US" ng-app="weatherApp">
+    <head>
+        <meta charset="utf-8">
+        <title>Weather Forcast SPA</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        
+        <script src="//code.angularjs.org/1.4.0-rc.2/angular.min.js"></script>
+        <script src="//code.angularjs.org/1.4.0-rc.2/angular-route.min.js"></script>
+        <script src="//code.angularjs.org/1.4.0-rc.2/angular-resource.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+    
+    
+    <body>
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#/">Weather Forcast SPA</a>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#/">Home</a></li>
+                            <li><a href="#/forcast">Forcast</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <div class="container">
+            <div ng-view></div>
+        </div>
+    
+    </body>
+</html>
